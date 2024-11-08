@@ -1,0 +1,40 @@
+html, body {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-main);
+    min-height: 100vh;
+
+    color: var(--text-color);
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 15px;
+}
+
+.none {
+    display: none !important;
+}
+
+.main {
+    padding: clamp(2.188rem, 1.563rem + 3.13vw, 4.375rem) 0;
+}
+
+.title-1 {
+    margin-bottom: clamp(1.563rem, 0.938rem + 3.13vw, 3.75rem);
+
+    font-size: clamp(1.875rem, 1.339rem + 2.68vw, 3.75rem);
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: center;
+    color: var(--accent);
+}
+
+.title-2 {
+    margin-bottom: clamp(0.625rem, 0.398rem + 1.14vw, 1.25rem);
+
+    font-size: clamp(1.25rem, 0.893rem + 1.79vw, 2.5rem);
+    font-weight: 700;
+    line-height: 1.5;
+}

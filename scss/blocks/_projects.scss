@@ -1,0 +1,33 @@
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 30px;
+}
+
+.project {
+    max-width: 370px;
+    background-color: var(--project-card-bg);
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform .4s ease-in;
+
+    &:hover .project__img {
+        transform: scale(1.03);
+    }
+
+    &__img {
+        border-radius: 10px;
+        transition: transform .4s ease-in;
+    }
+
+    &__title {
+        padding: 15px 20px 25px;
+        font-size: clamp(1.25rem, 1.179rem + 0.36vw, 1.5rem);
+        font-weight: 700;
+        line-height: 1.2;
+        color: var(--project-card-text);
+    }
+}

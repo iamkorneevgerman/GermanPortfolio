@@ -1,0 +1,10 @@
+.logo {
+    margin-right: auto;
+    color: var(--header-text);
+    font-size: clamp(1.25rem, 1.061rem + 0.49vw, 1.5rem);
+    font-family: var(--font-text);
+
+    span {
+        font-weight: 700;
+    }
+}
